@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram name="Página-1" id="ilIhlrsbki5sHugsQbz7">
+    <mxGraphModel dx="866" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="haaotKTYAqr4_LfaEy_R-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;dashed=1;gradientColor=none;fillColor=none;" value="Cloud Provider (e.g.: AWS, Azure, GCP, OnPrem)" vertex="1">
+          <mxGeometry height="260" width="242" x="528" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="Management Cluster" vertex="1">
+          <mxGeometry height="190" width="200" x="553" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GitHub repo&lt;div&gt;platform-gitops-bootstrapper&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="230" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Platform&lt;div&gt;Engineer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="32" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-4" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-5" connectable="0" parent="haaotKTYAqr4_LfaEy_R-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(1) Pull Request&lt;div&gt;with new&lt;/div&gt;&lt;div&gt;management cluster&amp;nbsp;&lt;/div&gt;&lt;div&gt;(one per environment)&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.25" as="geometry">
+            <mxPoint x="9" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-6" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Platform&lt;div&gt;Engineer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="33" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-7" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-6" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="235" />
+            </Array>
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-8" connectable="0" parent="haaotKTYAqr4_LfaEy_R-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(2) Review and&amp;nbsp;&lt;div&gt;approve&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2132" y="-2" as="geometry">
+            <mxPoint x="-36" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="K8s Control Plane" vertex="1">
+          <mxGeometry height="40" width="90" x="608" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="K8s Worker Node&lt;div&gt;with Flux installed&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="593" y="199" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-13" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-18" connectable="0" parent="haaotKTYAqr4_LfaEy_R-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(4) Deploy Management&lt;div&gt;Cluster and Flux&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2645" y="3" as="geometry">
+            <mxPoint x="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GitHub repo&lt;div&gt;platform-gitops&lt;/div&gt;&lt;div&gt;(has self-service&amp;nbsp;&lt;/div&gt;&lt;div&gt;features)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="230" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-20" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-11" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-21" connectable="0" parent="haaotKTYAqr4_LfaEy_R-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(5) Pull Flux&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;State&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;(every 5 minutes)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3317" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-22" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-11" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="haaotKTYAqr4_LfaEy_R-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-23" connectable="0" parent="haaotKTYAqr4_LfaEy_R-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Sync&amp;nbsp;&lt;div&gt;state&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0182" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-24" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-25" connectable="0" parent="haaotKTYAqr4_LfaEy_R-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(3) Merge to&lt;div&gt;main&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2017" y="1" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GitHub repo&lt;div&gt;observability-gitops&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="230" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-28" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Observability&lt;div&gt;Engineer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="34" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-29" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-28" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-30" connectable="0" parent="haaotKTYAqr4_LfaEy_R-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(6) Pull Request&lt;div&gt;to add Flux&amp;nbsp;&lt;/div&gt;&lt;div&gt;GitRepository&lt;/div&gt;&lt;div&gt;to sync&lt;/div&gt;&lt;div&gt;observability-gitops&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.22" y="3" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-31" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-6" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-32" connectable="0" parent="haaotKTYAqr4_LfaEy_R-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(7) Review and&amp;nbsp;&lt;div&gt;approve&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4611" y="3" as="geometry">
+            <mxPoint x="27" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-33" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-28" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="390" />
+              <mxPoint x="270" y="390" />
+            </Array>
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-34" connectable="0" parent="haaotKTYAqr4_LfaEy_R-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(8) Merge to&amp;nbsp;&lt;div&gt;main&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4495" y="-1" as="geometry">
+            <mxPoint x="4" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-35" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-11" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-36" connectable="0" parent="haaotKTYAqr4_LfaEy_R-35" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(9) Pull Observability State&lt;div&gt;(every 5 minutes)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.4909" as="geometry">
+            <mxPoint x="33" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;NOTES&lt;/b&gt;:&lt;div&gt;- Steps 5 and &quot;Sync state&quot; are fully automated.&lt;/div&gt;&lt;div&gt;- Another repo called platform-templates containing templates and generators will be reused by the repo &quot;platform-gitops&quot; to allow engineers/developers to ask for services in an easy way without needing to know kubernetes or implementation details.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="680" x="32" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-38" edge="1" parent="1" source="haaotKTYAqr4_LfaEy_R-28" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="haaotKTYAqr4_LfaEy_R-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="450" />
+            </Array>
+            <mxPoint x="390" y="450" as="sourcePoint" />
+            <mxPoint x="440" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="haaotKTYAqr4_LfaEy_R-39" connectable="0" parent="haaotKTYAqr4_LfaEy_R-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(10) Pull Requests&lt;div&gt;to add/update&lt;/div&gt;&lt;div&gt;Observability&amp;nbsp;&lt;/div&gt;&lt;div&gt;components&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3852" y="-1" as="geometry">
+            <mxPoint x="36" y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
