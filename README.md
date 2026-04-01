@@ -10,7 +10,9 @@ Terraform should not manage the same Flux configuration as Flux itself.
 
 This example uses the development environment, but you could use another.
 
-First make sure to be using the right AWS account and Role/User with the command:
+If you still are not logged in or have a user for this purpose, you can check how I log into my AWS account using good practices at [aws-login.md](./files/aws-login.md). Alternatively you can follow https://docs.aws.amazon.com/signin/latest/userguide/command-line-sign-in.html to log in a different way.
+
+Make sure to be using the right AWS account and Role/User with the command:
 
 ```bash
 aws sts get-caller-identity
